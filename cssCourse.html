@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Career Mate : Front End Development - CSS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <p class="m-0 fw-bold" style="font-size: 25px;">Career<span style="color: royalblue;">Mate</span></p>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" style="border: none;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="courses.html" class="nav-item nav-link active">Courses</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="profile.html" class="nav-item nav-link"><i class="fa fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container text-center">
+            <h1 class="display-3 text-white animated slideInDown">Front End Development - CSS</h1>
+            <p class="text-white">Style your web pages beautifully with CSS</p>
+        </div>
+    </div>
+
+    <!-- Course Content -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Main Course Content -->
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-4">What is CSS?</h2>
+                <p>CSS (<b>Cascading Style Sheets</b>) is used to style and layout web pages — for example, to change fonts, colors, spacing, and positioning of HTML elements. CSS makes your website look attractive and user-friendly.</p>
+
+                <h3 class="mt-4">How CSS Works</h3>
+                <p>CSS works by selecting HTML elements and applying styles to them. These styles are applied using selectors and properties.</p>
+
+                <h3 class="mt-4">Types of CSS</h3>
+                <ul>
+                    <li><b>Inline CSS</b> - Styles applied directly inside the HTML tag.</li>
+                    <li><b>Internal CSS</b> - Styles written inside a <code>&lt;style&gt;</code> tag in the HTML file.</li>
+                    <li><b>External CSS</b> - Styles written in a separate <code>.css</code> file and linked to the HTML file.</li>
+                </ul>
+
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+/* Example External CSS */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: royalblue;
+    text-align: center;
+}
+                </pre>
+
+                <h3 class="mt-4">Selectors in CSS</h3>
+                <ul>
+                    <li><code>p</code> - Selects all paragraph elements.</li>
+                    <li><code>.classname</code> - Selects elements with a specific class.</li>
+                    <li><code>#idname</code> - Selects an element with a specific ID.</li>
+                    <li><code>*</code> - Selects all elements.</li>
+                </ul>
+
+                <h3 class="mt-4">Colors and Backgrounds</h3>
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+body {
+    background-color: lightblue;
+}
+p {
+    color: darkgreen;
+}
+div {
+    background-image: url("background.jpg");
+}
+                </pre>
+
+                <h3 class="mt-4">Text Styling</h3>
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    line-height: 1.6;
+    font-style: italic;
+}
+                </pre>
+
+                <h3 class="mt-4">Box Model</h3>
+                <p>The CSS box model describes how the size of an element is calculated: <b>content, padding, border, margin</b>.</p>
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+div {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+}
+                </pre>
+
+                <h3 class="mt-4">CSS Layout Techniques</h3>
+                <ul>
+                    <li><b>Flexbox</b> - Flexible layouts.</li>
+                    <li><b>Grid</b> - Two-dimensional layouts.</li>
+                    <li><b>Positioning</b> - Absolute, relative, fixed, sticky.</li>
+                </ul>
+
+                <div class="mt-5">
+                    <a href="#" class="btn btn-primary">Start Learning CSS Now</a>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="p-4 bg-light rounded">
+                    <h5 class="fw-bold mb-3">Course Details</h5>
+                    <p><strong>Level:</strong> Beginner to Intermediate</p>
+                    <p><strong>Instructor:</strong> Career Mate Team and AI</p>
+                    <p><strong>Includes:</strong></p>
+                    <ul>
+                        <li>Video Lessons</li>
+                        <li>AI Generated Practice Exercises</li>
+                        <li>Downloadable Notes</li>
+                        <li>Final Project</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary w-100">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-start">
+                    <p>&copy; <a href="#" class="text-light">Career Mate</a>, All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

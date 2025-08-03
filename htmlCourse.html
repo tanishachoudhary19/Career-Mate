@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Career Mate : HTML Course for Beginners</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <p class="m-0 fw-bold" style="font-size: 25px;">Career<span style="color: royalblue;">Mate</span></p>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" style="border: none;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="courses.html" class="nav-item nav-link active">Courses</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="profile.html" class="nav-item nav-link"><i class="fa fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container text-center">
+            <h1 class="display-3 text-white animated slideInDown">HTML Course for Beginners</h1>
+            <p class="text-white">Learn HTML from scratch and start your web development journey</p>
+        </div>
+    </div>
+
+    <!-- Course Content -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Main Course Content -->
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-4">What is HTML?</h2>
+                <p>HTML (<b>HyperText Markup Language</b>) is the standard language used to create web pages. It tells the browser how to display text, images, and other elements. HTML is the backbone of all websites and is the first step to becoming a web developer.</p>
+
+                <h3 class="mt-4">Basic Structure of an HTML Document</h3>
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML webpage.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+
+                <h3 class="mt-4">HTML Elements</h3>
+                <p>HTML documents are made up of <b>elements</b> that usually have an opening tag, content, and a closing tag.</p>
+                <ul>
+                    <li><code>&lt;h1&gt;...&lt;/h1&gt;</code> - Headings</li>
+                    <li><code>&lt;p&gt;...&lt;/p&gt;</code> - Paragraph</li>
+                    <li><code>&lt;a href="url"&gt;...&lt;/a&gt;</code> - Links</li>
+                    <li><code>&lt;img src="image.jpg"&gt;</code> - Images</li>
+                </ul>
+
+                <h3 class="mt-4">Headings in HTML</h3>
+                <p>Headings are defined with <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</p>
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Smaller Heading&lt;/h3&gt;
+                </pre>
+
+                <h3 class="mt-4">Links in HTML</h3>
+                <p>Links allow users to navigate from one page to another.</p>
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+                </pre>
+
+                <h3 class="mt-4">Images in HTML</h3>
+                <p>Images are added using the <code>&lt;img&gt;</code> tag.</p>
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+&lt;img src="photo.jpg" alt="Description"&gt;
+                </pre>
+
+                <h3 class="mt-4">Tables in HTML</h3>
+                <p>Tables are used to display data in rows and columns.</p>
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+
+                <h3 class="mt-4">Forms in HTML</h3>
+                <p>Forms allow users to input data.</p>
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+&lt;form&gt;
+    &lt;input type="text" placeholder="Enter Name"&gt;&lt;br&gt;
+    &lt;input type="email" placeholder="Enter Email"&gt;&lt;br&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+                </pre>
+
+                <h3 class="mt-4">Semantic HTML</h3>
+                <p>HTML5 introduced semantic elements that clearly describe their meaning.</p>
+                <ul>
+                    <li><code>&lt;header&gt;</code> - Top section</li>
+                    <li><code>&lt;nav&gt;</code> - Navigation menu</li>
+                    <li><code>&lt;article&gt;</code> - Article content</li>
+                    <li><code>&lt;footer&gt;</code> - Footer section</li>
+                </ul>
+
+                <div class="mt-5">
+                    <a href="#" class="btn btn-primary">Start Learning Now</a>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="p-4 bg-light rounded">
+                    <h5 class="fw-bold mb-3">Course Details</h5>
+                    <p><strong>Level:</strong> Beginner</p>
+                    <p><strong>Instructor:</strong> Career Mate Team and AI</p>
+                    <p><strong>Includes:</strong></p>
+                    <ul>
+                        <li>Video Lessons</li>
+                        <li>AI Generated Practice Exercises</li>
+                        <li>Downloadable Notes</li>
+                        <li>Final Project</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary w-100">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-start">
+                    <p>&copy; <a href="#" class="text-light">Career Mate</a>, All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

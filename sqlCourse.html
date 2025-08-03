@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Career Mate : SQL for Data Science</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <p class="m-0 fw-bold" style="font-size: 25px;">Career<span style="color: royalblue;">Mate</span></p>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            style="border: none;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="courses.html" class="nav-item nav-link active">Courses</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="profile.html" class="nav-item nav-link"><i class="fa fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container text-center">
+            <h1 class="display-3 text-white animated slideInDown">SQL for Data Science</h1>
+            <p class="text-white">Master SQL to analyze and manage data effectively</p>
+        </div>
+    </div>
+
+    <!-- Course Content -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Main Course Content -->
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-4">What is SQL?</h2>
+                <p>SQL (Structured Query Language) is a standard language used to manage and manipulate relational databases. It is a key skill for data analysis and data science, enabling you to extract insights from datasets.</p>
+
+                <h3 class="mt-4">Why Learn SQL for Data Science?</h3>
+                <ul>
+                    <li>Essential for querying and analyzing datasets.</li>
+                    <li>Used by all major relational databases (MySQL, PostgreSQL, SQL Server, etc.).</li>
+                    <li>Required for data analyst and data scientist roles.</li>
+                    <li>Integrates with data visualization tools.</li>
+                </ul>
+
+                <h3 class="mt-4">Your First SQL Query</h3>
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+-- Select all data from a table
+SELECT * FROM employees;
+                </pre>
+                <script>
+                    function runFirstSQL() {
+                        alert("SQL Output:\n(Example) Showing all rows from employees table.");
+                    }
+                </script>
+
+                <!-- Run Button -->
+                <button onclick="runFirstSQL()" class="btn btn-primary mt-2">Run</button>
+
+                <h3 class="mt-4">Basic SQL Commands</h3>
+                <ul>
+                    <li><b>SELECT:</b> Retrieve data from a table.</li>
+                    <li><b>WHERE:</b> Filter results based on a condition.</li>
+                    <li><b>ORDER BY:</b> Sort results in ascending or descending order.</li>
+                    <li><b>GROUP BY:</b> Group data for aggregation.</li>
+                </ul>
+
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+-- Filtering data
+SELECT name, salary
+FROM employees
+WHERE salary > 50000;
+
+-- Sorting data
+SELECT name, department
+FROM employees
+ORDER BY department ASC;
+                </pre>
+
+                <h3 class="mt-4">Aggregations</h3>
+                <pre style="background:#f8f9fa;padding:10px;border-radius:5px;">
+-- Counting employees in each department
+SELECT department, COUNT(*) AS employee_count
+FROM employees
+GROUP BY department;
+                </pre>
+
+                
+                <div class="mt-5">
+                    <a href="#" class="btn btn-primary">Start Learning SQL Now</a>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="p-4 bg-light rounded">
+                    <h5 class="fw-bold mb-3">Course Details</h5>
+                    <p><strong>Level:</strong> Beginner to Intermediate</p>
+                    <p><strong>Instructor:</strong> Career Mate Team & AI</p>
+                    <p><strong>Includes:</strong></p>
+                    <ul>
+                        <li>Hands-on SQL Exercises</li>
+                        <li>Real-World Data Sets</li>
+                        <li>Practice Projects</li>
+                        <li>SQL Compiler Access</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary w-100">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-start">
+                    <p>&copy; <a href="#" class="text-light">Career Mate</a>, All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
