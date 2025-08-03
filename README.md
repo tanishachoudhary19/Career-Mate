@@ -38,6 +38,3 @@ Hosting: Runs locally
 Assets: Images, icons, custom styles
 
 
-
-## 📂 Folder Structure
-
