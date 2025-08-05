@@ -8,7 +8,6 @@ function signupUser() {
         return false;
     }
 
-    // Save user data in localStorage
     let userData = { username, email, password };
     localStorage.setItem("careerMateUser", JSON.stringify(userData));
 
@@ -16,6 +15,7 @@ function signupUser() {
     window.location.href = "login.html";
     return false; // Prevent form submit
 }
+
 
 function loginUser() {
     let email = document.getElementById("loginEmail").value.trim();
@@ -44,3 +44,4 @@ function checkLogin() {
         window.location.href = "login.html";
     }
 }
+
